@@ -1,0 +1,633 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+.masterHeader {
+	background-image: url("http://wideopentech.com/themes/wot-2013-gm/_/img/wot-masthead-dark.png");
+	color: white;
+	background-origin: content-box;
+	background-size: cover;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	font-family: 'Open Sans';
+
+}
+
+.insideHeader {
+	height: 150px;
+	width: 100%;
+
+}
+
+.placeHolder {
+
+	float: left;
+	height: 50px;
+	width: 200px;
+	padding: 10px;
+
+}
+
+.insideHeader img {
+	position: absolute;
+	left: 20px;
+	clip: 50 0 50 0;
+	top: -50px;
+	height: 200px;
+	width: 200px;
+
+}
+
+.topNav {
+	position: relative;
+	right: 40px;
+	text-align: right;
+	float: right;
+	color: white;
+	letter-spacing: 4px;
+	font-size: 22px;
+	height: 50px;
+	padding: 30px 5px 0 45px;
+}
+
+.insideHeader2 {
+	padding: 0 30px;
+	width: 100%;
+}
+
+.insideHeader2 em {
+	color: #d56d36;
+	font-style: italic;
+}
+
+.insideDouble1 {
+	display: flex;
+	justify-content: center;
+}
+
+.whiteBar {
+	background: white;
+	margin: 10px auto;
+	height: 9px;
+	width: 100px;
+}
+
+.insideHeader3 {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.flip-cont {
+    perspective: 1000;
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald';
+}
+
+.flip-cont:hover .flipbox {
+    transform: rotateY(180deg);
+}
+
+.flip-cont, .flexFront, .flexBack {
+    width: 200px;
+    height: 200px;
+    
+
+}
+
+.flipbox {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flexFront, .flexBack {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.flexFront {
+	align-items: flex-end;
+	text-align: center;
+}
+
+.flexBack {
+	align-items: flex-start;
+	text-align: left;
+}
+
+.flexFront img {
+	position: absolute;
+	bottom: 100px;
+	left: 65px;
+	height: 70px;
+	width: 70px;
+}
+
+.flexBack img {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	height: 70px;
+	width: 70px;
+}
+
+.flexFront {
+    z-index: 2;
+}
+
+.flexBack {
+    transform: rotateY(180deg);
+}
+
+#flip1 {
+	background: #2ec2a8;
+}
+
+
+#flip2 {
+	background: #40666d;
+}
+
+#flip3 {
+	background: #878787;
+}
+
+#flip4 {
+	background: #45c1cc;
+}
+
+#flip5 {
+	background: #bdd537;
+}
+
+.container1 {
+	padding: 50px;
+	color: #40666d;
+	font-family: Sans-Serif;
+	font-weight: 200;
+	width: 100%;
+	background: #f0f0f0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.para1 {	
+	padding-bottom: 30px;
+	margin: 0 auto;
+	height: 45%;
+	width: 85%;
+	text-align: center;
+	font-size: 30px;
+}
+
+.para1 em {
+	font-weight: 400;
+	font-style: normal;
+}
+
+.para2 {
+	text-align: center;
+}
+
+.para2 img {
+	height: 100px;
+	width: 100px;
+}
+
+.para3 {
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+
+.para3 em {
+	color: #b2db00;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.container2 {
+	padding: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	background: #ffffff;
+	box-sizing: border-box;
+
+}
+
+.insideContainer2 {
+	font-family: 'Open Sans';
+	font-size: 20px;
+	color: #40666d;
+	padding: 10px;
+	width: 30%;
+	text-align: center;
+
+}
+
+.insideContainer2 em {
+	color: #b2db00;
+	font-style: normal;
+}
+
+.insideContainer2 #something {
+	width: 60%;
+	padding: 10px;
+	color: #b2db00;
+	font-size: 15px;
+	margin: 0 auto;
+}
+.insideContainer2 img {
+	height: 100px;
+	width: 100px;
+}
+
+#something:hover {
+	color: blue;
+}
+.cont1 img {
+	height: 40px;
+	width: 40px;
+}
+
+@media only screen and (max-width: 990px) {
+	.container2 {
+		flex-direction: column;
+	}
+	.insideContainer2 {
+		width: 70%;
+		margin: 0 auto;
+		padding: 20px 30px;
+	}
+}
+
+.container3 {
+	background: #f0f0f0;
+	color: #40666d;
+	font-family: Sans-Serif;
+	font-size: 23px;
+	font-weight: 200;
+	text-align: center;
+	padding: 30px 120px 7px;
+}
+
+.cont3Insert {
+	height: 650px;
+	display: flex;
+	flex-flow: column wrap;
+	align-content: center;
+
+}
+
+.cont3First {
+	font-weight: 300;
+	font-size: 4vw;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+}
+
+.cont3First em {
+	color: #b2db00;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.cont3Second {
+	width: 30%;
+	font-weight: 500;
+	padding: 40px;
+	background: white;
+	margin: 15px;
+}
+
+.cont3Second small {
+	font-weight: 300;
+}
+
+@media only screen and (max-width: 1150px) {
+	.container3 {
+		font-size: 2.5vw;
+	}
+	.cont3First {
+		font-size: 4vw;
+	}
+	.cont3Insert {
+		flex-wrap: nowrap;
+		height: 900px;
+	}
+	.cont3Second {
+		margin: 15px auto;
+		width: 90%;
+	}
+}
+
+.container4 {
+	height: 250px;
+	width: 70%;
+	margin: 0 auto;
+	padding: 30px;
+	background: white;
+	color: #40666d;
+	font-family: Sans-Serif;
+	text-align: center;
+
+	box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+}
+
+.cont4First {
+	font-size: 46px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.cont4Second {
+	font-size: 25px;
+	font-weight: 200;
+}
+
+.cont4Second em {
+	color: #b2db00;
+	font-style: normal;
+}
+
+.container4 img {
+	position: absolute;
+	bottom: -300px;
+	right: 0px;
+	transition: bottom 1s;
+}
+
+.container4:hover > img {
+	bottom: -225px;
+}
+
+.container5 {
+	padding: 50px;
+	background: #bdd537;
+	font-family: Sans-Serif;
+	text-align: center;
+}
+
+.cont5First {
+	color: white;
+	font-size: 46px;
+	font-weight: 300;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.cont5Insert {
+	margin: 0 auto;
+	width: 80%;
+	min-height: 600px;
+}
+
+.imgMaster {
+	margin: 15px;
+	display: inline-block;
+	width: 245px;
+	height: 125px;
+	transition: all 1s;
+}
+
+.imgMaster:hover {
+	transform: scale(1.1);
+	transition: all 1s;
+}
+
+@media only screen and (max-width: 990px) {
+
+}
+
+#bg1 {
+	
+	background: url("http://wideopentech.com/themes/wot-2013-gm/_/img/sprite_client_logos.jpg") no-repeat;/*13px 1px*/
+	/*background-position: 0% 0%;*/
+	background-position: 13px 1px;
+
+}
+
+#bg2 {
+	background: url("http://wideopentech.com/themes/wot-2013-gm/_/img/sprite_client_logos.jpg") no-repeat;/* -330px 1px*/
+	background-position: 50% -1%;
+}
+
+#bg3 {
+	background: url("http://wideopentech.com/themes/wot-2013-gm/_/img/sprite_client_logos.jpg") no-repeat;/* -640px 1px;*/
+	background-position: 99% -2%;
+}
+
+#bg4 {
+	background: url("http://wideopentech.com/themes/wot-2013-gm/_/img/sprite_client_logos.jpg") no-repeat;/* 1px -136px;*/
+	background-position: 0% 29%;
+}
+
+#bg5 {
+	background: url("http://wideopentech.com/themes/wot-2013-gm/_/img/sprite_client_logos.jpg") no-repeat;/* -314px -136px;*/
+	background-position: 50% 28%;
+}
+
+#bg6 {
+	background: url("http://wideopentech.com/themes/wot-2013-gm/_/img/sprite_client_logos.jpg") no-repeat;/* -640px -136px;*/
+	background-position: 99% 29%;
+}
+
+#bg7 {
+	background: url("http://wideopentech.com/themes/wot-2013-gm/_/img/sprite_client_logos.jpg") no-repeat;/* 1px -280px;*/
+	background-position: 0% 58%;
+}
+
+#bg8 {
+	background: url("http://wideopentech.com/themes/wot-2013-gm/_/img/sprite_client_logos.jpg") no-repeat;/* -320px -280px;*/
+	background-position: 50% 58%;
+}
+
+#bg9 {
+	background: url("http://wideopentech.com/themes/wot-2013-gm/_/img/sprite_client_logos.jpg") no-repeat;/* -640px -280px;*/
+	background-position: 99% 58%;
+}
+
+.container6 {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.inside6Left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 350px;
+	float: left;
+	background: url("http://wideopentech.com/themes/wot-2013-gm/_/img/wilmington.jpg");
+	background-size: cover;
+}
+
+.inside6Right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	width: 50%;
+	height: 350px;
+	color: 
+	float: left;
+	background: url("http://wideopentech.com/themes/wot-2013-gm/_/img/asheville.jpg");
+	background-size: cover;
+}
+
+.inside6Inner {
+	font-family: Sans-Serif;
+	line-height: 170%;
+	height: 150px;
+	width: 300px;
+	border-radius: 2%;
+	background: rgba(0, 0, 0, 0.35);
+	padding: 10px;
+}
+
+.inside6Inside1 {
+	color: #b2db00;
+	font-size: 30px;
+	letter-spacing: 3px;
+}
+
+.inside6Inside2 {
+	color: white;
+
+}
+
+.inside6Inside3 {
+	color: #b2db00;
+	letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 990px) {
+	.container6 {
+		flex-direction: column;
+	}
+	.inside6Left, .inside6Right {
+		width: 100%;
+	}
+}
+
+.container7 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 350px;
+	width: 100%;
+	color: white;
+	background: #5e8488;
+	text-align: center;
+}
+
+.inside7One {
+	font-family: 'Lato';
+	font-size: 27px;
+	margin: 20px 0;
+}
+
+.inside7Two {
+	font-family: 'Open Sans';
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-transform: uppercase;;
+}
+
+.inside7Three {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	height: 40px;
+	width: 80%;
+	max-width: 700px;
+	border-radius: 4px;
+	background-color: white;
+}
+
+.whiteInputBox {
+	padding-left: 5px;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 75%;
+	color: #5e8488;
+
+}
+
+.fakeButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 25%;
+	background: #c2d84a;
+	border-radius: 0 4px 4px 0;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	height: 90px;
+	width: 100%;
+	font-family: "Open Sans";
+	background: #53747a;
+}
+
+.footer1 {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	height: 100%;
+	width: 30%;
+	color: white;
+}
+
+.footer1 em {
+	color: #c2d84a;
+}
+
+.footerNav {
+	height: 100%;
+	width: 60%;
+	display: flex;
+	padding: 0 20px;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.footerLinks {
+	color: white;
+	padding: 5px;
+	margin: 0 10px;
+	text-transform: uppercase;
+}
+
+@media only screen and (max-width: 990px) {
+	.footerNav {
+		width: 1%;
+	}
+	.footerLinks {
+		color: transparent;
+	}
+}
